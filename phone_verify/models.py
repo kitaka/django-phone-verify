@@ -31,9 +31,9 @@ class TimeStampedUUIDModel(UUIDModel):
 
 
 class SMSVerification(TimeStampedUUIDModel):
-    security_code = models.CharField(_("Security Code"), max_length=120)
-    phone_number = PhoneNumberField(_("Phone Number"))
-    session_token = models.CharField(_("Device Session Token"), max_length=255)
+    security_code = models.CharField(_("Security Code"), max_length=10)
+    phone_number = PhoneNumberField(_("Phone Number"), max_length=13)
+    session_token = models.CharField(_("Device Session Token"), max_length=168)
     is_verified = models.BooleanField(_("Security Code Verified"), default=False)
 
     class Meta:
