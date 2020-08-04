@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="SMSVerification",
             name="security_code",
-            field=models.CharField(max_length=120, verbose_name="Security Code"),
+            field=models.CharField(max_length=200, verbose_name="Security Code"),
         ),
         migrations.AddField(
             model_name="smsverification",
@@ -31,6 +31,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="smsverification",
             name="session_token",
-            field=models.CharField(max_length=255, verbose_name="Device Session Token"),
+            field=models.CharField(max_length=200, verbose_name="Device Session Token"),
         ),
     ]

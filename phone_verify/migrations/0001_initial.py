@@ -27,17 +27,17 @@ class Migration(migrations.Migration):
                 ),
                 ("created_at", models.DateTimeField(auto_now_add=True)),
                 ("modified_at", models.DateTimeField(auto_now=True)),
-                ("otp", models.CharField(max_length=120, verbose_name="OTP")),
+                ("otp", models.CharField(max_length=10, verbose_name="OTP")),
                 (
                     "phone_number",
                     phonenumber_field.modelfields.PhoneNumberField(
-                        max_length=128, verbose_name="Phone Number"
+                        max_length=13, verbose_name="Phone Number"
                     ),
                 ),
                 (
                     "session_code",
                     models.CharField(
-                        max_length=255, verbose_name="Device Session Code"
+                        max_length=200, verbose_name="Device Session Code"
                     ),
                 ),
             ],
