@@ -31,6 +31,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="smsverification",
             name="session_token",
-            field=models.CharField(max_length=500, verbose_name="Device Session Token"),
+            field=models.CharField(max_length=255, verbose_name="Device Session Token"),
         ),
     ]
