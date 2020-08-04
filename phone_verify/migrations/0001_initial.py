@@ -37,7 +37,7 @@ class Migration(migrations.Migration):
                 (
                     "session_code",
                     models.CharField(
-                        max_length=200, verbose_name="Device Session Code"
+                        max_length=168, verbose_name="Device Session Code"
                     ),
                 ),
             ],
